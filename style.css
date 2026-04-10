@@ -9,18 +9,21 @@ body {
 /* Media Queries */
 @media screen and (min-width: 600px) {
     body {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: lightgoldenrodyellow;
-}
+        grid-template-columns: 1fr 1fr;
+        background-color: lightgoldenrodyellow;
+    }
+    footer {
+        grid-column: 1 / -1;
+    }
 }
 @media screen and (min-width: 800px) {
     body {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: lightblue;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: lightblue;
+    }
+
 }
-}
+
 /*Navigation Flex*/
 nav ul {
     display: flex;
@@ -47,7 +50,7 @@ nav a:hover {
 /*Content Card Styles*/
 .card-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
 }
 
@@ -55,4 +58,11 @@ nav a:hover {
     background: white;
     padding: 1rem;
     border-radius: 8px;
+}
+/* About me section */
+#about ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
 }
