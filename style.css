@@ -1,0 +1,23 @@
+/* CSS written by Kristin Wojcik */
+
+/* Global Styles (Mobile First)*/
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: lightgrey;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: lightgoldenrodyellow;
+}
+}
+@media screen and (min-width: 800px) {
+    body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: lightblue;
+}
+}
